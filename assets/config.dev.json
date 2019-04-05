@@ -1,22 +1,19 @@
 {
     "domain": "http://localhost:8080",
     "basePath": "SEO-POT/rest/V1",
-    "globalAutoNavigate": false,
     "endPoints" : {
         "users": {
             "login": {
                 "url": "users/login",
                 "mockLocation": "assets/mocks/user.mock.json",
                 "mocked": true,
-                "autoNavigate": true,
                 "httpMethod": "POST",
                 "requiresAuth": false
             },
             "createUser": {
                 "url": "users",
                 "mockLocation": "assets/mocks/genericResponse.mock.json",
-                "mocked": false,
-                "autoNavigate": true,
+                "mocked": true,
                 "httpMethod": "POST",
                 "requiresAuth": true
             },
@@ -24,23 +21,20 @@
                 "url": "users/{username}",
                 "mockLocation": "assets/mocks/user.mock.json",
                 "mocked": true,
-                "autoNavigate": true,
                 "httpMethod": "GET",
                 "requiresAuth": true
             },
             "replaceUser": {
                 "url": "users/{username}",
                 "mockLocation": "assets/mocks/user.mock.json",
-                "mocked": false,
-                "autoNavigate": true,
+                "mocked": true,
                 "httpMethod": "PUT",
                 "requiresAuth": true
             },
             "deleteUser": {
                 "url": "users/{username}",
                 "mockLocation": "assets/mocks/genericResponse.mock.json",
-                "mocked": false,
-                "autoNavigate": true,
+                "mocked": true,
                 "httpMethod": "DELETE",
                 "requiresAuth": true
             },
@@ -48,7 +42,6 @@
                 "url": "users",
                 "mockLocation": "assets/mocks/users.mock.json",
                 "mocked": true,
-                "autoNavigate": true,
                 "httpMethod": "GET",
                 "requiresAuth": true
             }
