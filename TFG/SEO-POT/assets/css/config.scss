@@ -1,0 +1,37 @@
+/* External imports */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$color--black: #071013;
+$color--white:#DEE8E5;
+$color--grey: #757676;
+$color--darkgrey: #2B2B2B;
+$color--green:#318935;
+$color--red:#ce3333;
+$color--yellow:#e9b84c;
+$background--primary:$color--black;
+$background--secondary:$color--grey;
+$background--alternative:$color--darkgrey;
+$background--error:$color--red;
+$font__family--array: 'Roboto', 'Montserrat', sans-serif;
+$font__family--main: 'Roboto';
+$font__family--secondary: 'Montserrat';
+$font__size--default: 16px;
+$font__size--small: 0.85rem;
+$font__size--medium: 1.5rem;
+$font__size--large: 2rem;
+$font__size--xlarge: 3rem;
+$font__weight--light: 200;
+$font__weight--regular: 400;
+$font__weight--bold: 700;
+$font__color--primary: $color--white;
+$font__color--secondary: $color--black;
+$font__color--alternative: $color--darkgrey;
+$font__color--error: $color--red;
+$h__color--primary: $color--green;
+$h__color--secondary: $color--yellow;
+$a__color--primary: $color--yellow;
+$a__color--secondary: $color--green;
+$button__background--primary:$color--yellow;
+$button__background--secondary:$color--green;
+$button__background--alternative:$color--grey;

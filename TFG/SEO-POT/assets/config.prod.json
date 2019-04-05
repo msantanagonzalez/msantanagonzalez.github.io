@@ -1,0 +1,47 @@
+{
+    "domain": "http://localhost:8080",
+    "basePath": "SEO-POT/V1",
+    "globalAutoNavigate": false,
+    "endPoints" : {
+        "users": {
+            "login": {
+                "url": "users/login",
+                "autoNavigate": true,
+                "httpMethod": "POST",
+                "requiresAuth": false
+            },
+            "createUser": {
+                "url": "users",
+                "autoNavigate": true,
+                "httpMethod": "POST",
+                "requiresAuth": true
+            },
+            "readUser": {
+                "url": "users/{username}",
+                "autoNavigate": true,
+                "httpMethod": "GET",
+                "requiresAuth": true
+            },
+            "replaceUser": {
+                "url": "users/{username}",
+                "autoNavigate": true,
+                "httpMethod": "PUT",
+                "requiresAuth": true
+            },
+            "deleteUser": {
+                "url": "users/{username}",
+                "autoNavigate": true,
+                "httpMethod": "DELETE",
+                "requiresAuth": true
+            },
+            "getAllUsers": {
+                "url": "users",
+                "mockLocation": "a",
+                "mocked": false,
+                "autoNavigate": true,
+                "httpMethod": "GET",
+                "requiresAuth": true
+            }
+        }
+    }
+}

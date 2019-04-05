@@ -1,0 +1,176 @@
+/* Internal imports */
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "config.scss";
+
+/* External imports */
+
+/*  placeholder selectors */
+
+%button-primary {
+  background-color: $button__background--primary;
+  color: $font__color--secondary;
+  border: $color--black;
+  font-size: $font__size--medium;
+  width: 100%
+}
+
+%element-primary--focus {
+  outline: 0px solid ;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px $color--green;
+}
+
+%element-primary--focusError {
+  outline: 0px solid ;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px $color--red;
+}
+
+%button-secondary {
+  background-color: $button__background--secondary;
+  color: $font__color--primary;
+  border: $color--black;
+  font-size: $font__size--medium;
+  width: 100%
+} 
+
+%button-disabled {
+  background-color: $button__background--alternative;
+  color: $font__color--alternative;
+  border: $color--black;
+  font-size: $font__size--medium;
+  width: 100%
+}
+
+%button-cancel {
+  background-color: $background--error;
+  color: $font__color--primary;
+  border: $color--black;
+  font-size: $font__size--medium;
+  width: 100%
+}
+
+%h1-primary{
+  color: $h__color--primary;
+  font-family: $font__family--secondary;
+}
+
+%h1-secondary{
+  color: $h__color--secondary;
+}
+
+/* ----- Using BEM for CSS naming on component SCSS => block__element--modifier -----*/
+/*--- Main classes ---*/
+body{
+  background-color: $background--primary;
+  background-image: url('/assets/images/POTBackground_bg.jpg');
+  color: $font__color--primary; 
+  font-family: $font__family--array;
+  font-size: $font__size--default;
+  font-weight: $font__weight--regular; 
+}
+
+.pot h1{
+  @extend %h1-primary;
+  font-weight: $font__weight--bold;
+  font-size: $font__size--xlarge;
+}
+
+.pot h1.secondary{
+  @extend %h1-secondary;
+  font-weight: $font__weight--bold;
+  font-size: $font__size--xlarge;
+}
+
+.pot h2{
+  font-size: $font__size--large;
+  color: $h__color--secondary;
+}
+
+.pot h3{
+  font-size: $font__size--medium;
+  color: $h__color--secondary;
+}
+
+.pot input:focus{
+  @extend %element-primary--focus;
+  border-color: $button__background--secondary;
+}
+
+.pot button{
+  @extend %button-primary;
+}
+
+.pot button:focus{
+  @extend %element-primary--focus;
+}
+
+.pot button:hover{
+  @extend %button-secondary;
+}
+
+.pot button:disabled{
+  @extend %button-disabled;
+}
+
+.pot button.secondary{
+  @extend %button-secondary;
+}
+
+.pot button.secondary:hover{
+  @extend %button-primary;
+}
+
+.pot button.cancel{
+  @extend %button-cancel;
+}
+
+.pot button.cancel:hover{
+  @extend %element-primary--focusError;
+}
+
+.pot a{
+  color: $a__color--primary;
+}
+
+.pot a.btn.secondary {
+  @extend %button-secondary;
+}
+
+.pot a.secondary{
+  color: $a__color--secondary !important;
+  font-size: $font__size--small;
+}
+
+.pot a:focus{
+  @extend %element-primary--focus;      
+}
+
+.pot fa-icon.button-icon{
+  margin-right: 0.5rem;
+}
+
+.pot input.error{
+  border-color: $font__color--error;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $font__color--error;
+}
+
+.pot span.icon-container--error{
+  background-color: $background--error;
+  border-color: $font__color--error;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $font__color--error;
+}
+
+.pot div.container-error{
+  color: $font__color--error;
+  font-size: $font__size--small;
+  margin-top: -0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+/*--- Override ---*/
+.modal-backdrop {
+  background-color: $background--secondary !important;
+}
+
+.modal-content {
+  border-radius: 1.5rem !important;
+}
