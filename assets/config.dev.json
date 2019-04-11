@@ -26,7 +26,7 @@
             },
             "replaceUser": {
                 "url": "users/{username}",
-                "mockLocation": "assets/mocks/user.mock.json",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
                 "mocked": true,
                 "httpMethod": "PUT",
                 "requiresAuth": true

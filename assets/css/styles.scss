@@ -166,6 +166,11 @@ body{
   margin-bottom: 0.5rem;
 }
 
+.pot input[type='checkbox'] {
+  transform: scale(1.5);
+  margin: 1rem;
+}
+
 /*--- Override ---*/
 .modal-backdrop {
   background-color: $background--secondary !important;
