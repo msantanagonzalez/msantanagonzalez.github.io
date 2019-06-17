@@ -1,51 +1,207 @@
 {
     "domain": "http://localhost:8080",
-    "basePath": "SEO-POT/rest/V1",
+    "basePath": "rest/V1",
+    "frontToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJ1c2VyIjoiaW5mb3Nlb3BvdCJ9.e6xpvTO41yI2wXW1y1_WuKyNko1A2AHM-bZ9J6qdYFI",
     "endPoints" : {
         "users": {
             "login": {
                 "url": "users/login",
-                "mockLocation": "assets/mocks/user.mock.json",
-                "mocked": true,
+                "mockLocation": "assets/mocks/users/user.mock.json",
+                "mocked": false,
                 "httpMethod": "POST",
-                "requiresAuth": false
+                "requiresAuth": false,
+                "frontToken": false
             },
             "createUser": {
                 "url": "users",
                 "mockLocation": "assets/mocks/genericResponse.mock.json",
-                "mocked": true,
+                "mocked": false,
                 "httpMethod": "POST",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": true
             },
             "readUser": {
                 "url": "users/{username}",
-                "mockLocation": "assets/mocks/user.mock.json",
-                "mocked": true,
+                "mockLocation": "assets/mocks/users/user.mock.json",
+                "mocked": false,
                 "httpMethod": "GET",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": false
             },
             "replaceUser": {
                 "url": "users/{username}",
                 "mockLocation": "assets/mocks/genericResponse.mock.json",
-                "mocked": true,
+                "mocked": false,
                 "httpMethod": "PUT",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": false
             },
             "deleteUser": {
                 "url": "users/{username}",
                 "mockLocation": "assets/mocks/genericResponse.mock.json",
-                "mocked": true,
+                "mocked": false,
                 "httpMethod": "DELETE",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": false
             },
             "getAllUsers": {
                 "url": "users",
-                "mockLocation": "assets/mocks/users.mock.json",
-                "mocked": true,
+                "mockLocation": "assets/mocks/users/users.mock.json",
+                "mocked": false,
                 "httpMethod": "GET",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": false
             }
         },
-        "other2" : null
+        "documents" : {
+            "createDocument": {
+                "url": "documents",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "readDocument": {
+                "url": "documents/{username}",
+                "mockLocation": "assets/mocks/documents/document.mock.json",
+                "mocked": false,
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "replaceDocument": {
+                "url": "documents/{username}",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "PUT",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "deleteDocument": {
+                "url": "documents/{username}",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "DELETE",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "getAllDocuments": {
+                "url": "documents",
+                "mockLocation": "assets/mocks/documents/documents.mock.json",
+                "mocked": false,
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "downloadDocument": {
+                "url": "documents/download/{username}",
+                "mockLocation": "assets/mocks/documents/userDocument.mock.html",
+                "mocked": false,
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            }
+        },
+        "pages" : {
+            "createPage": {
+                "url": "pages",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "readPage": {
+                "url": "pages/{username}",
+                "mockLocation": "assets/mocks/pages/page.mock.json",
+                "mocked": false,
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "replacePage": {
+                "url": "pages/{username}",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "PUT",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "deletePage": {
+                "url": "pages/{username}",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "DELETE",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "getAllPages": {
+                "url": "pages",
+                "mockLocation": "assets/mocks/pages/pages.mock.json",
+                "mocked": false,
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            }
+        },
+        "rules" : {
+            "createRule": {
+                "url": "rules",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "readRule": {
+                "url": "rules/{id}",
+                "mockLocation": "assets/mocks/rules/rule.mock.json",
+                "mocked": false,
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "replaceRule": {
+                "url": "rules/{id}",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "PUT",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "deleteRule": {
+                "url": "rules/{id}",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "DELETE",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "getAllRules": {
+                "url": "rules",
+                "mockLocation": "assets/mocks/rules/rules.mock.json",
+                "mocked": false,
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "checkIfRulePasses": {
+                "url": "rules/{id}/checkIfPass/{ownerId}",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "applyRule": {
+                "url": "rules/{id}/applyRule/{ownerId}",
+                "mockLocation": "assets/mocks/genericResponse.mock.json",
+                "mocked": false,
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            }
+        }
     }
 }

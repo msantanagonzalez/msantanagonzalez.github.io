@@ -1,0 +1,40 @@
+[
+    {
+      "email": "tatiux.santana@gmail.com",
+      "username": "tatiux",
+      "name": "Marco Polo",
+      "role": "admin"
+    },
+    {
+      "email": "msgonzalez@esei.uvigo.es",
+      "username": "msgonzalez",
+      "name": "Marco Santana",
+      "role": "admin"
+    },
+    {
+      "email": "user1@gmail.com",
+      "username": "camila",
+      "name": "Camila Santana",
+      "role": "user"
+    },
+    {
+      "email": "user2@gmail.com",
+      "username": "oscar",
+      "name": "Oscar Santana",
+      "password": "G3m3l0$02",
+      "role": "user"
+    },
+    {
+      "email": "string",
+      "username": "string",
+      "name": "string",
+      "password": "string",
+      "role": "admin"
+    },
+    {
+      "email": "tatiux.santana@gmail.com",
+      "username": "tatiux2",
+      "name": "Marco Polo",
+      "role": "admin"
+    }
+  ]

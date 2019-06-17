@@ -1,0 +1,38 @@
+{
+    "appliedRules": [
+      {
+        "appliedDate": "Jun 1, 2019 9:21:32 PM",
+        "descriptiveId": "OB_Doctype",
+        "explanation": "Doctype must be present to ensure the browser knows what type of document to expect.",
+        "name": "Doctype Present",
+        "changes": "[INSERT,<span class=“editNewInline”><!doctype html></span>,<!doctype html>],[EQUAL,<html lang=“en”>,<html lang=“en”>],[EQUAL, <head> , <head> ],[EQUAL, <meta charset=“utf-8”> , <meta charset=“utf-8”> ],[EQUAL, <title>SEO-POT</title> , <title>SEO-POT</title> ],[EQUAL, <meta name=“viewport” content=“width=device-width, initial-scale=1”> , <meta name=“viewport” content=“width=device-width, initial-scale=1”> ],[EQUAL, <link rel=“icon” href=“resources/img/HadaSmall.png”> , <link rel=“icon” href=“resources/img/HadaSmall.png”> ],[EQUAL, <link href=“resources/css/bootstrap.min.css” rel=“stylesheet”> , <link href=“resources/css/bootstrap.min.css” rel=“stylesheet”> ],[EQUAL, </head> , </head> ],[EQUAL, <body> , <body> ],[EQUAL, <script type=“text/javascript” src=“main.js”></script> , <script type=“text/javascript” src=“main.js”></script> ],[EQUAL, <script>\r, <script>\r],[EQUAL, function initMap() {\r, function initMap() {\r],[EQUAL, var map = new google.maps.Map(document.getElementById(‘googleMap’), {\r, var map = new google.maps.Map(document.getElementById(‘googleMap’), {\r],[EQUAL, center: {lat: 42.330501, lng: -7.863199},\r, center: {lat: 42.330501, lng: -7.863199},\r],[EQUAL, zoom: 18\r, zoom: 18\r],[EQUAL, });\r, });\r],[EQUAL,\r,\r],[EQUAL, var infowindow = new google.maps.InfoWindow();\r, var infowindow = new google.maps.InfoWindow();\r],[EQUAL, var service = new google.maps.places.PlacesService(map);\r, var service = new google.maps.places.PlacesService(map);\r],[EQUAL,\r,\r],[EQUAL, service.getDetails({\r, service.getDetails({\r],[EQUAL, placeId: ‘ChIJaU842M_-Lw0RWjY1-KLSn9A’\r, placeId: ‘ChIJaU842M_-Lw0RWjY1-KLSn9A’\r],[EQUAL, }, function(place, status) {\r, }, function(place, status) {\r],[EQUAL, if (status === google.maps.places.PlacesServiceStatus.OK) {\r, if (status === google.maps.places.PlacesServiceStatus.OK) {\r],[EQUAL, var marker = new google.maps.Marker({\r, var marker = new google.maps.Marker({\r],[EQUAL, map: map,\r, map: map,\r],[EQUAL, position: place.geometry.location\r, position: place.geometry.location\r],[EQUAL, });\r, });\r],[EQUAL, google.maps.event.addListener(marker, ‘click’, function() {\r, google.maps.event.addListener(marker, ‘click’, function() {\r],[EQUAL, infowindow.setContent(’<div><strong>’ + place.name + ‘</strong><br>’ +\r, infowindow.setContent(’<div><strong>’ + place.name + ‘</strong><br>’ +\r],[EQUAL, place.formatted_address + ‘</div>’ +\r, place.formatted_address + ‘</div>’ +\r],[EQUAL, place.international_phone_number + ‘<br>’ +\r, place.international_phone_number + ‘<br>’ +\r],[EQUAL, place.website + ‘<br>’ +\r, place.website + ‘<br>’ +\r],[EQUAL, ‘<a href="’+ place.url + ‘" target="_blank" >’ + “View on maps” + ‘</a>’\r, ‘<a href="’+ place.url + ‘" target="_blank" >’ + “View on maps” + ‘</a>’\r],[EQUAL, );\r, );\r],[EQUAL, infowindow.open(map, this);\r, infowindow.open(map, this);\r],[EQUAL, });\r, });\r],[EQUAL, }\r, }\r],[EQUAL, });\r, });\r],[EQUAL, }\r, }\r],[EQUAL, </script> , </script> ],[EQUAL, <div class=“container-fluid”> , <div class=“container-fluid”> ],[EQUAL, <div class=“navbar-header page-scroll”> , <div class=“navbar-header page-scroll”> ],[EQUAL, <h2> small big text </h2> , <h2> small big text </h2> ],[EQUAL, <h1> Main title </h1> , <h1> Main title </h1> ],[EQUAL, <h1> Second Main title </h1> , <h1> Second Main title </h1> ],[EQUAL, <a href="#"> google </a> , <a href="#"> google </a> ],[EQUAL, <img class=“logo” src=“resources/img/Logo.png”> , <img class=“logo” src=“resources/img/Logo.png”> ],[EQUAL, <p> bla bla blabla bla </p> , <p> bla bla blabla bla </p> ],[EQUAL, </div> , </div> ],[EQUAL, </div> , </div> ],[EQUAL, </body>, </body>],[EQUAL,</html>,</html>],"
+      }
+    ],
+    "createdDate": "2019-21-01 09:21:20",
+    "document": {
+      "fileName": "index_nodoctype_clean.html",
+      "owner": "tatiux",
+      "uploadedDate": "2019-21-01 09:21:20"
+    },
+    "failedRules": [
+      {
+        "descriptiveId": "RE_UniqueDoctype",
+        "explanation": "Defining more than one Doctype will throw an error in the W3C HTML5 Validator.",
+        "name": "Only One Doctype"
+      }
+    ],
+    "lastEdited": "2019-21-01 09:21:32",
+    "owner": "tatiux",
+    "ruleList": [
+      {
+        "descriptiveId": "OB_Doctype",
+        "explanation": "Doctype must be present to ensure the browser knows what type of document to expect.",
+        "name": "Doctype Present"
+      },
+      {
+        "descriptiveId": "RE_UniqueDoctype",
+        "explanation": "Defining more than one Doctype will throw an error in the W3C HTML5 Validator.",
+        "name": "Only One Doctype"
+      }
+    ]
+  }

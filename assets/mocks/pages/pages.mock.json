@@ -1,0 +1,37 @@
+[
+    {
+      "appliedRules": [
+        {
+          "appliedDate": "Jun 1, 2019 9:21:32 PM",
+          "descriptiveId": "OB_Doctype"
+        }
+      ],
+      "createdDate": "2019-21-01 09:21:20",
+      "document": {
+        "fileName": "index_nodoctype_clean.html",
+        "owner": "tatiux",
+        "uploadedDate": "2019-21-01 09:21:20"
+      },
+      "failedRules": [
+        {
+          "descriptiveId": "RE_UniqueDoctype",
+          "explanation": "Defining more than one Doctype will throw an error in the W3C HTML5 Validator.",
+          "name": "Only One Doctype"
+        }
+      ],
+      "lastEdited": "2019-21-01 09:21:32",
+      "owner": "tatiux",
+      "ruleList": [
+        {
+          "descriptiveId": "OB_Doctype",
+          "explanation": "Doctype must be present to ensure the browser knows what type of document to expect.",
+          "name": "Doctype Present"
+        },
+        {
+          "descriptiveId": "RE_UniqueDoctype",
+          "explanation": "Defining more than one Doctype will throw an error in the W3C HTML5 Validator.",
+          "name": "Only One Doctype"
+        }
+      ]
+    }
+  ]

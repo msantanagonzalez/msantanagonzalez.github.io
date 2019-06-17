@@ -1,38 +1,159 @@
 {
-    "domain": "http://localhost:8080",
-    "basePath": "SEO-POT/V1",
+    "domain": "https://seo-pot.herokuapp.com",
+    "basePath": "V1",
+    "frontToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJ1c2VyIjoiaW5mb3Nlb3BvdCJ9.e6xpvTO41yI2wXW1y1_WuKyNko1A2AHM-bZ9J6qdYFI",
     "endPoints" : {
         "users": {
             "login": {
                 "url": "users/login",
                 "httpMethod": "POST",
-                "requiresAuth": false
+                "requiresAuth": false,
+                "frontToken": false
             },
             "createUser": {
                 "url": "users",
                 "httpMethod": "POST",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": true
             },
             "readUser": {
                 "url": "users/{username}",
                 "httpMethod": "GET",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": false
             },
             "replaceUser": {
                 "url": "users/{username}",
                 "httpMethod": "PUT",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": false
             },
             "deleteUser": {
                 "url": "users/{username}",
                 "httpMethod": "DELETE",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": false
             },
             "getAllUsers": {
                 "url": "users",
                 "httpMethod": "GET",
-                "requiresAuth": true
+                "requiresAuth": true,
+                "frontToken": false
             }
-        }
+        },
+        "documents" : {
+            "createDocument": {
+                "url": "documents",
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "readDocument": {
+                "url": "documents/{username}",
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "replaceDocument": {
+                "url": "documents/{username}",
+                "httpMethod": "PUT",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "deleteDocument": {
+                "url": "documents/{username}",
+                "httpMethod": "DELETE",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "getAllDocuments": {
+                "url": "documents",
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "downloadDocument": {
+                "url": "documents/download/{username}",
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            }
+        },
+        "pages" : {
+            "createPage": {
+                "url": "pages",
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "readPage": {
+                "url": "pages/{username}",
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "replacePage": {
+                "url": "pages/{username}",
+                "httpMethod": "PUT",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "deletePage": {
+                "url": "pages/{username}",
+                "httpMethod": "DELETE",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "getAllPages": {
+                "url": "pages",
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            }
+        },
+        "rules" : {
+            "createRule": {
+                "url": "rules",
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "readRule": {
+                "url": "rules/{id}",
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "replaceRule": {
+                "url": "rules/{id}",
+                "httpMethod": "PUT",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "deleteRule": {
+                "url": "rules/{id}",
+                "httpMethod": "DELETE",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "getAllRules": {
+                "url": "rules",
+                "httpMethod": "GET",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "checkIfRulePasses": {
+                "url": "rules/{id}/checkIfPass/{ownerId}",
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            },
+            "applyRule": {
+                "url": "rules/{id}/applyRule/{ownerId}",
+                "httpMethod": "POST",
+                "requiresAuth": true,
+                "frontToken": false
+            }
+        } 
     }
 }

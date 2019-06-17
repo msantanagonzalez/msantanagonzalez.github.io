@@ -85,6 +85,11 @@ body{
   color: $h__color--secondary;
 }
 
+.pot h2.secondary{
+  font-size: $font__size--large;
+  color: $h__color--primary;
+}
+
 .pot h3{
   font-size: $font__size--medium;
   color: $h__color--secondary;
@@ -182,4 +187,32 @@ body{
 
 ngb-highlight .ngb-highlight{
   color: $color--green !important;
+}
+
+ngb-accordion {
+  // color: $color--black;
+}
+
+ngb-accordion h5>button {
+  background-color: $color--darkgrey !important;
+  color: $color--white !important;
+}
+
+ngb-accordion .card-header {
+  // background-color: $color--grey
+  background-color: transparent;
+}
+
+ngb-accordion .card {
+  // background-color: $color--grey;
+  background-color: transparent;
+  border-color: $color--darkgrey
+}
+
+span.innerHTML a {
+  color: $color--green !important;
+}
+
+.modal-footer {
+  border: none !important;
 }

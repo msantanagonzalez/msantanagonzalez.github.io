@@ -1,0 +1,30 @@
+[
+    {
+      "definition": {
+        "actions": [
+          "insertDoctypeTag()"
+        ],
+        "condition": "hasDoctypeTag() == false",
+        "priority": 1
+      },
+      "description": "The <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.w3.org/TR/html5/syntax.html#the-doctype\">Doctype<a> element explains what type of HTML is to be expected and therefore what spec validators should validate your document. There's <a href=\"https://www.w3.org/wiki/Doctypes_and_markup_styles\">diferent types</a> of Doctype that you can use, when omitted browsers tend to use a different rendering mode that is incompatible with some specifications. Including the DOCTYPE in a document ensures that the browser makes a best-effort attempt at following the relevant specifications.",
+      "descriptiveId": "OB_Doctype",
+      "explanation": "Doctype must be present to ensure the browser knows what type of document to expect.",
+      "name": "Doctype Present",
+      "result": "Applying this rule will inject the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.w3.org/QA/2002/04/valid-dtd-list.html\">recommended</a> Doctype declaration into your page."
+    },
+    {
+      "definition": {
+        "actions": [
+          "removeExtraDoctypeTags"
+        ],
+        "condition": "hasOnlyOneDoctypeTag() == false",
+        "priority": 2
+      },
+      "description": "Validating your page with the W3C Standars will ensure a well-formed markup. Markup validation is an important step towards ensuring the technical quality of web pages.",
+      "descriptiveId": "RE_UniqueDoctype",
+      "explanation": "Defining more than one Doctype will throw an error in the W3C HTML5 Validator.",
+      "name": "Only One Doctype",
+      "result": "Applying this rule will keep the first Doctype declaration and remove the rest."
+    }
+  ] 

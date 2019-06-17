@@ -1,0 +1,14 @@
+{
+    "definition": {
+      "actions": [
+        "insertDoctypeTag()"
+      ],
+      "condition": "hasDoctypeTag() == false",
+      "priority": 1
+    },
+    "description": "The <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.w3.org/TR/html5/syntax.html#the-doctype\">Doctype</a> element explains what type of HTML is to be expected and therefore what spec validators should validate your document. There's <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.w3.org/wiki/Doctypes_and_markup_styles\">diferent types</a> of Doctype that you can use, when omitted browsers tend to use a different rendering mode that is incompatible with some specifications. Including the DOCTYPE in a document ensures that the browser makes a best-effort attempt at following the relevant specifications.",
+    "descriptiveId": "OB_Doctype",
+    "explanation": "Doctype must be present to ensure the browser knows what type of document to expect.",
+    "name": "Doctype Present",
+    "result": "Applying this rule will inject the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.w3.org/QA/2002/04/valid-dtd-list.html\">recommended</a> Doctype declaration into your page."
+  }

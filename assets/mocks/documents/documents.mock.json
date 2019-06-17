@@ -1,0 +1,12 @@
+[
+    {
+      "fileName": "index.html",
+      "owner": "tatiux",
+      "url": "http://localhost:8080/SEO-POT/rest/V1/documents/download/tatiux"
+    },
+    {
+      "fileName": "404.html",
+      "owner": "test123",
+      "url": "http://localhost:8080/SEO-POT/rest/V1/documents/download/test123"
+    }
+  ]
