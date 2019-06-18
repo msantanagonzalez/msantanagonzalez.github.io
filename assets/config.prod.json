@@ -1,6 +1,6 @@
 {
-    "domain": "https://seo-pot.herokuapp.com",
-    "basePath": "V1",
+    "domain": "http://209.250.234.220:8080",
+    "basePath": "rest/V1",
     "frontToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJ1c2VyIjoiaW5mb3Nlb3BvdCJ9.e6xpvTO41yI2wXW1y1_WuKyNko1A2AHM-bZ9J6qdYFI",
     "endPoints" : {
         "users": {
